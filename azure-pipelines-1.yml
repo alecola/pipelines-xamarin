@@ -17,6 +17,12 @@ steps:
   displayName: 'Select Xamarin SDK version'
   enabled: false
 
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provisioningProfileLocation: 'sourceRepository'
+    provProfileSourceRepository: 'AlessandroColamarinoProvisioningProfile.mobileprovision' 
+
+
 - task: NuGetToolInstaller@0
 
 - task: NuGetCommand@2
@@ -30,7 +36,3 @@ steps:
     buildForSimulator: true
     packageApp: true
 
-- task: InstallAppleProvisioningProfile@1
-  inputs:
-    provisioningProfileLocation: 'sourceRepository'
-    provProfileSourceRepository: 'AlessandroColamarinoProvisioningProfile.mobileprovision' 
