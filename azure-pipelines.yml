@@ -37,8 +37,8 @@ jobs:
       pathtoPublish: '$(outputDirectory)'
 
 - job: iOS
-  pool:
-    vmImage: 'macOS 10.15'
+pool:
+  vmImage: 'macOS-10.15' # For Windows, use 'windows-2019'
 
   steps:
   # To manually select a Xamarin SDK version on the Hosted macOS agent, enable this script with the SDK version you want to target
