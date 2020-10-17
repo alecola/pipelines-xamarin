@@ -16,6 +16,13 @@ steps:
   enabled: false
 
 
+- task: NuGetToolInstaller@0
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '**/*.sln'
+
+
 - task: InstallAppleCertificate@2
   inputs:
     certSecureFile: 'development.p12' # replace my-secure-file.p12 with the name of your P12 file.
@@ -27,12 +34,6 @@ steps:
     provProfileSecureFile: 'AlessandroColamarinoProvisioningProfile.mobileprovision' 
 
 
-
-- task: NuGetToolInstaller@0
-
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '**/*.sln'
 
 - task: XamariniOS@2
   inputs:
