@@ -17,6 +17,11 @@ steps:
   displayName: 'Select Xamarin SDK version'
   enabled: false
 
+- task: InstallAppleCertificate@2
+  inputs:
+    certSecureFile: 'development.p12' # replace my-secure-file.p12 with the name of your P12 file.
+    certPwd: 'Sulmona.78*'
+
 - task: InstallAppleProvisioningProfile@1
   inputs:
     provisioningProfileLocation: 'secureFiles'
