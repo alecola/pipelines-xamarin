@@ -40,4 +40,6 @@ steps:
     configuration: 'Release'
     buildForSimulator: true
     packageApp: true
+    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
+    signingProvisioningProfileID: '$(APPLE_PROV_PROFILE_UUID)'
 
