@@ -28,4 +28,9 @@ steps:
     solutionFile: '**/*.sln'
     configuration: 'Release'
     buildForSimulator: true
-    packageApp: false
+    packageApp: true
+
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provisioningProfileLocation: 'sourceRepository'
+    provProfileSourceRepository: 'AlessandroColamarinoProvisioningProfile.mobileprovision' 
