@@ -6,13 +6,9 @@
 trigger:
 - master
 
-# Xamarin.iOS
-# Build a Xamarin.iOS app and Xamarin.UITest assembly.
-# Add steps that install certificates, test, sign, and distribute the app, save build artifacts, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
-
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
 pool:
-  vmImage: 'macOS 10.13'
+  vmImage: 'macOS-10.15' # For Windows, use 'windows-2019'
 
 steps:
 # To manually select a Xamarin SDK version on the Hosted macOS agent, enable this script with the SDK version you want to target
