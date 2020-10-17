@@ -19,8 +19,8 @@ steps:
 
 - task: InstallAppleProvisioningProfile@1
   inputs:
-    provisioningProfileLocation: 'sourceRepository'
-    provProfileSourceRepository: 'AlessandroColamarinoProvisioningProfile.mobileprovision' 
+    provisioningProfileLocation: 'secureFiles'
+    provProfileSecureFile: 'AlessandroColamarinoProvisioningProfile.mobileprovision' 
 
 
 - task: NuGetToolInstaller@0
