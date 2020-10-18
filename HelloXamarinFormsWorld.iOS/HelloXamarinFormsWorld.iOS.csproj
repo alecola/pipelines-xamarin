@@ -12,6 +12,7 @@
     <NuGetPackageImportStamp>f3f47bd6</NuGetPackageImportStamp>
     <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+    <ProvisioningType>manual</ProvisioningType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,6 +85,8 @@
     <ConsolePause>False</ConsolePause>
     <CodesignKey>iPhone Distribution</CodesignKey>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <BuildIpa>true</BuildIpa>
+    <IpaMetadata>Info.plist</IpaMetadata>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
