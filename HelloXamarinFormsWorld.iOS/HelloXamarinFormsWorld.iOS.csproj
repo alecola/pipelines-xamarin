@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>HelloXamarinFormsWorld.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>FormsTemplateiOS</AssemblyName>
+    <AssemblyName>HelloXamarinFormsWorld</AssemblyName>
     <NuGetPackageImportStamp>f3f47bd6</NuGetPackageImportStamp>
     <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
