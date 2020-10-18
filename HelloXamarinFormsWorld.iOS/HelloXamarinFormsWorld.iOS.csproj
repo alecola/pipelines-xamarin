@@ -75,6 +75,8 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
     <BuildIpa>True</BuildIpa>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <IpaMetadata>Info.plist</IpaMetadata>
+    <IpaPackageName>com.yourcompany.HelloXamarinFormsWorld</IpaPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>none</DebugType>
