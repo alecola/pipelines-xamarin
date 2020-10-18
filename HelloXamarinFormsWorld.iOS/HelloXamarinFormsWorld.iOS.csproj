@@ -92,6 +92,9 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
