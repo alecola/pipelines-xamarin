@@ -12,7 +12,7 @@
     <NuGetPackageImportStamp>f3f47bd6</NuGetPackageImportStamp>
     <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
-    <ProvisioningType>manual</ProvisioningType>
+    <ProvisioningType>automatic</ProvisioningType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
